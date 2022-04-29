@@ -10,7 +10,8 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+    "onCommand:extension.helloWorld",
+    "onCommand:extension.spacex"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -18,7 +19,7 @@
 			{
 				"command": "extension.helloWorld",
 				"title": "Hello World"
-      },
+			},
 			{
 				"command": "extension.spacex",
 				"title": "Space X"
@@ -44,6 +45,7 @@
 		"vscode-test": "^1.0.2"
 	},
 	"dependencies": {
+		"fs": "^0.0.1-security",
 		"node-fetch": "^2.6.0"
 	}
 }
